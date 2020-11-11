@@ -44,7 +44,8 @@ source:
   name_template: '{{ .ProjectName }}'
   format: 'tar'
 nfpms:
-  - maintainer: "botv <botv@vccloud.vn>"
+  - file_name_template: '{{ .ProjectName }}-v{{ .Version }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
+    maintainer: "botv <botv@vccloud.vn>"
     description: |
       Collect system metrics and send to pushgateway.
        Note bizfly-agent uses node exporter, with some modification to filesystem
@@ -76,5 +77,5 @@ release:
     owner: bizflycloud
     name: bizfly-agent
   prerelease: auto
-  name_template: "{{ .ProjectName }}-v{{ .Version}} {{ .Env.USER}}"
+  name_template: "{{ .ProjectName }}-v{{ .Version }} {{ .Env.USER }}"
 
