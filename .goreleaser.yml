@@ -74,7 +74,7 @@ nfpms:
 release:
   github:
     owner: bizflycloud
-    name: "{{ .ProjectName}}"
+    name: "{{ .ProjectName }}"
   prerelease: auto
-  name_template: "{{ .ProjectName}}-v{{ .Version}} {{ .Env.USER}}"
+  name_template: "{{ .ProjectName }}-v{{ .Version}} {{ .Env.USER}}"
 
