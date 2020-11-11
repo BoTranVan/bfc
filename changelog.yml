@@ -1,0 +1,935 @@
+- semver: 1.0.4
+  date: 2020-11-03T23:44:39+07:00
+  packager: Bo Tran Van <botv@vccloud.vn>
+  changes:
+  - commit: 1545a548ea3f985ba7ae0480ca7f861cc2aa6b09
+    note: |-
+      Merge pull request #14 from bizflycloud/fix_collect_cpu_percent
+
+      fix error collect cpu usage percentage in windows and add support to linux
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 882f01485b07e3f032b0e88766e0c1aa8e129d4f
+    note: |-
+      Merge pull request #13 from bizflycloud/refactor_code
+
+      sync with debian package
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+- semver: 1.0.3
+  date: 2020-10-22T19:26:41+07:00
+  packager: Bo Tran Van <botv@vccloud.vn>
+  changes:
+  - commit: 29b4eb5d4bfa14cb1d15226194a0387a88e83770
+    note: |-
+      Merge pull request #12 from bizflycloud/refactor_code
+
+      add runtime field when auto register agents
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+- semver: 1.0.2
+  date: 2020-08-19T18:10:03+07:00
+  packager: Bo Tran Van <botv@vccloud.vn>
+  changes:
+  - commit: 073d082156a94a5c747249095b27f627872f66b6
+    note: |-
+      Merge pull request #11 from bizflycloud/fix_create_user_config_folder
+
+      make parent directories as needed when create config folder
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 354d95392db65f4c8a0be1ee27ef0d7d814a67f3
+    note: Update install_script.sh
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 7cbc8f58b7891e2a7a74f21fb2e5caea99685521
+    note: Update install_script.sh
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 8afdb641bb356d28f4bdd98c6cf4f67a5bbb5b89
+    note: |-
+      Merge pull request #10 from bizflycloud/add_script_install
+
+      add script auto install and config for agent
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: bcf4dcd726666aaf7e6aeaf81623a2d9c17a4767
+    note: |-
+      Merge pull request #9 from bizflycloud/add_template_config
+
+      add new template config
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+- semver: 1.0.1
+  date: 2020-08-18T14:54:56+07:00
+  packager: Bo Tran Van <botv@vccloud.vn>
+  changes:
+  - commit: 208cdb1b2d0833d7fc480597434b44b632e8a14d
+    note: |-
+      Merge pull request #8 from bizflycloud/update_node_exporter_version
+
+      update version of node_exporter module to v1.0.1
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 585414bbfdce01b8e58bf7e6b13d1c587eaa2d4c
+    note: |-
+      Merge pull request #6 from bizflycloud/add_ci_release
+
+      feat: Add ci release
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: c7915b3e5ab7bf52cb40df6b5b4e63d72c9cf216
+    note: |-
+      Merge pull request #7 from bizflycloud/add_register_agents
+
+      add runtime lable and register agents auto
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: ed5d3799007b476039beb49114d8bfff732a6fab
+    note: fix error config can't read on multiple path and reget hostname when run.
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 6d1bde4c6aca8a909dff5e4015b65a385ab714e2
+    note: update new version of node_exporter
+    author:
+      name: Bo Tran Van
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: Bo Tran Van
+      email: tranbo9xnd@gmail.com
+  - commit: ba88586bf818ab99290db52bd0f82f6baeaa3800
+    note: get device mapping in windows
+    author:
+      name: Bo Tran Van
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: Bo Tran Van
+      email: tranbo9xnd@gmail.com
+  - commit: 8e5c4915eab87e81b4ddd2a1d811d584009da868
+    note: |-
+      Merge pull request #3 from bizflycloud/feature/http-client-timeout
+
+      client: use specific timeout for client
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: b247aab1002a5d19cc5727627b6ed7c7cbf095e9
+    note: |-
+      Merge pull request #4 from bizflycloud/feature/log-if-not-new-token-fails
+
+      client: log error if new token failed
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: c0f16467e7331dff84022d5792c2b0bb249af00a
+    note: |-
+      Merge pull request #1 from bizflycloud/add_validate_by_jwt_token
+
+      add validate by jwt token for agents
+    author:
+      name: Sa Pham
+      email: great_bn@yahoo.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 78639b309591e8b9b08bce5683fb50e305ec777c
+    note: save request body for retrying
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: e3c5c93169a8bb4839bf22dc9b0ecf1ba47c0f16
+    note: add README
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 9a951d8fde3aa6453dda5cd1022b9546b1276b17
+    note: add LICENSE
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: e443794c275c0310c32ae3ab846cfc30a9634f8d
+    note: add .gitignore
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: c42e93b67ebf9ceefe1fb1c1224408129cdfe8cd
+    note: get new token in case of forbidden
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7efb88a4c7546528e04ff75800b3d059a3fb528b
+    note: use full device path as map key
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 28ff452fcb4c36941d7e7eb76389ab78d42b3761
+    note: fix wrong constructing uuid
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: d849a1b0b2b9a9095337840fe3df2f5b92562069
+    note: fix missing map init + missing close dir
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 43874cb4cba5a32dfd309a1debc1bda8a6411cc2
+    note: fix get wrong uuid
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 82591ebf6c84cf3b63e9284e59a1a799e20a70ed
+    note: get device mapping from /dev/disk/by-id
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 69af484e4f7b619a85fdc5a99bd9b7f3e36ddd97
+    note: update device mapping when device added/removed
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: a9158d6854c1f525a79d6cea02c113ad758a7dd2
+    note: get device mapping only once
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7ea333dc16ac8df43ffef8ca9f6173aabc0fa77f
+    note: check mount name matching by prefix
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 3e34bd29aeceb3bc2fb62d8d4839fc14713a72ef
+    note: replace device name by volume id
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 444d7830fc05278b96f2fbde22ef70b4e0a89c9a
+    note: update vendor
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 0a75fd30f4afa6e5ceeb6413881d473aefcb1fee
+    note: refactoring
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7afbb8c1fe7197de8d5f6107797f5d4fd1c12a5e
+    note: Read instance_id from file and add label for authen
+    author:
+      name: sapd
+      email: sapd@vccloud.vn
+    committer:
+      name: sapd
+      email: sapd@vccloud.vn
+  - commit: 02f75b792ebfe64f47cd3c573e437148f6c1ce77
+    note: bump node_exporter to master
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: ab8c7cdf952e105f1c4c1d5f3caa4eea72336ce3
+    note: |-
+      skeleton, not work yet.
+
+      See https://github.com/prometheus/procfs/issues/175
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: b1d85dc10f810983a6fe6fca61629d3aec95c13e
+    note: remove Get mehod and fix missing return
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 1e738a94512e0372aea3eeb49cef4edbd1c15251
+    note: change log Fatal -> Error
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: dbb2ec0a8e209701e309bae7e54033280981e106
+    note: add secret id to get auth token
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 6a0687d0e7ebde648713cb74ca61c738aa90c0b0
+    note: change defaultMetadataEndpoint -> defaultEndpoint
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: b15e171541df8547da0d66d786db1064b5f3afd7
+    note: fix error when delete auth_token file
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: ab8d2c34a3a261c9eac44439a2dff151e0b7eafb
+    note: 'all: use user''s config dir to store auth token'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 03eee58988b97a438557b3770d705434c354f4c0
+    note: 'config: fix wrong config filename'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: f6527d9ead4ad0cd717d9ac7252fa7d2b12874ce
+    note: node collectors require kingpin
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: a30d220176fbc80644b3cbcc935ce0c172c21844
+    note: 'client: fix unhandled error'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 2c0543d809e7af0996aab1be611e8efa32c09b15
+    note: 'auth: fix wrong auth token filename'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7f45da8b266033884f60f8ffc93a625a926e00de
+    note: Fix wrong gitignore file name
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: f399a7c3df66e0cb90fef6ef1202b3bce947a98a
+    note: 'auth,client: use promeheus log package'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 681052e2657dac89123843192f2bf369783581b7
+    note: Remove cmd package
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 4779ecacff531457166c2193d4284c6cfd0a5dd1
+    note: 'all: add global config.Config'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 6a8c2879d412390afde0a70ac8e16391a800473e
+    note: remove vendor
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 291b9f4ba091eb098fba801e76707d29b78879ee
+    note: using filepath.Join when make filename path
+    author:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+    committer:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+  - commit: c19500eb7dec081982d2192519ef43ee216695f0
+    note: change comment ... exported
+    author:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+    committer:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+  - commit: 268f025e083aefdec2ec7116893ad3b569d4f47b
+    note: add validate by jwt token for agents
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 6cfd14b9f2f6b96e9adefe1d8d801b5f77c80ca8
+    note: 'client: log error if new token failed'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: eb6830f0490c019c40f384748a99727dfe0bba62
+    note: 'client: use specific timeout for client'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 15068a976e73e4aa037fae02f85079fe97317cda
+    note: remove call NewHTTPClient() when register agent
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 15d9bf7638030d8a982281e9c7ffa6738ba5d8e8
+    note: change module prometheus/node_exporter to bizflycloud/node_exporter
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 94493882fb5ed6d19ee693414c75728da83610d9
+    note: change status when get token success
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 8caf3562d8366e323a674f75b5ccc040c3eac31f
+    note: 'fix err: Config haven''t name of agents'
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 913a9e2cea3cceba5b44444d1f355f3e7e6913f4
+    note: add return err when write config
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 35cb93313fd4c1d030d9bdf3811542c6fc4c0381
+    note: add runtime lable and register agents auto
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: af960e09126ae5e161df60112aba8d73dea94abc
+    note: Merge branch 'master' into add_ci_release
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 191ed76368f6ea50b80c24a76d2e2c70006a47b1
+    note: add release binary
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 63a6bf98767d1fc2a9a4f4efa0d3cf6f6b4ba465
+    note: fix ci github action
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+- semver: 1.0.0
+  date: 2020-05-28T10:32:14+07:00
+  packager: Bo Tran Van <botv@vccloud.vn>
+  changes:
+  - commit: db731f301101ca7463aa4fbc3b9d8ce9bd6f7d98
+    note: 'feat: Add ci release'
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 8e5c4915eab87e81b4ddd2a1d811d584009da868
+    note: |-
+      Merge pull request #3 from bizflycloud/feature/http-client-timeout
+
+      client: use specific timeout for client
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: b247aab1002a5d19cc5727627b6ed7c7cbf095e9
+    note: |-
+      Merge pull request #4 from bizflycloud/feature/log-if-not-new-token-fails
+
+      client: log error if new token failed
+    author:
+      name: Ministry
+      email: tranbo9xnd@gmail.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: c0f16467e7331dff84022d5792c2b0bb249af00a
+    note: |-
+      Merge pull request #1 from bizflycloud/add_validate_by_jwt_token
+
+      add validate by jwt token for agents
+    author:
+      name: Sa Pham
+      email: great_bn@yahoo.com
+    committer:
+      name: GitHub
+      email: noreply@github.com
+  - commit: 78639b309591e8b9b08bce5683fb50e305ec777c
+    note: save request body for retrying
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: e3c5c93169a8bb4839bf22dc9b0ecf1ba47c0f16
+    note: add README
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 9a951d8fde3aa6453dda5cd1022b9546b1276b17
+    note: add LICENSE
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: e443794c275c0310c32ae3ab846cfc30a9634f8d
+    note: add .gitignore
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: c42e93b67ebf9ceefe1fb1c1224408129cdfe8cd
+    note: get new token in case of forbidden
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7efb88a4c7546528e04ff75800b3d059a3fb528b
+    note: use full device path as map key
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 28ff452fcb4c36941d7e7eb76389ab78d42b3761
+    note: fix wrong constructing uuid
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: d849a1b0b2b9a9095337840fe3df2f5b92562069
+    note: fix missing map init + missing close dir
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 43874cb4cba5a32dfd309a1debc1bda8a6411cc2
+    note: fix get wrong uuid
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 82591ebf6c84cf3b63e9284e59a1a799e20a70ed
+    note: get device mapping from /dev/disk/by-id
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 69af484e4f7b619a85fdc5a99bd9b7f3e36ddd97
+    note: update device mapping when device added/removed
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: a9158d6854c1f525a79d6cea02c113ad758a7dd2
+    note: get device mapping only once
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7ea333dc16ac8df43ffef8ca9f6173aabc0fa77f
+    note: check mount name matching by prefix
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 3e34bd29aeceb3bc2fb62d8d4839fc14713a72ef
+    note: replace device name by volume id
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 444d7830fc05278b96f2fbde22ef70b4e0a89c9a
+    note: update vendor
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 0a75fd30f4afa6e5ceeb6413881d473aefcb1fee
+    note: refactoring
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7afbb8c1fe7197de8d5f6107797f5d4fd1c12a5e
+    note: Read instance_id from file and add label for authen
+    author:
+      name: sapd
+      email: sapd@vccloud.vn
+    committer:
+      name: sapd
+      email: sapd@vccloud.vn
+  - commit: 02f75b792ebfe64f47cd3c573e437148f6c1ce77
+    note: bump node_exporter to master
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: ab8c7cdf952e105f1c4c1d5f3caa4eea72336ce3
+    note: |-
+      skeleton, not work yet.
+
+      See https://github.com/prometheus/procfs/issues/175
+    author:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: LE Manh Cuong
+      email: cuong.manhle.vn@gmail.com
+  - commit: b1d85dc10f810983a6fe6fca61629d3aec95c13e
+    note: remove Get mehod and fix missing return
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 1e738a94512e0372aea3eeb49cef4edbd1c15251
+    note: change log Fatal -> Error
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: dbb2ec0a8e209701e309bae7e54033280981e106
+    note: add secret id to get auth token
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 6a0687d0e7ebde648713cb74ca61c738aa90c0b0
+    note: change defaultMetadataEndpoint -> defaultEndpoint
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: b15e171541df8547da0d66d786db1064b5f3afd7
+    note: fix error when delete auth_token file
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: ab8d2c34a3a261c9eac44439a2dff151e0b7eafb
+    note: 'all: use user''s config dir to store auth token'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 03eee58988b97a438557b3770d705434c354f4c0
+    note: 'config: fix wrong config filename'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: f6527d9ead4ad0cd717d9ac7252fa7d2b12874ce
+    note: node collectors require kingpin
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: a30d220176fbc80644b3cbcc935ce0c172c21844
+    note: 'client: fix unhandled error'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 2c0543d809e7af0996aab1be611e8efa32c09b15
+    note: 'auth: fix wrong auth token filename'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 7f45da8b266033884f60f8ffc93a625a926e00de
+    note: Fix wrong gitignore file name
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: f399a7c3df66e0cb90fef6ef1202b3bce947a98a
+    note: 'auth,client: use promeheus log package'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 681052e2657dac89123843192f2bf369783581b7
+    note: Remove cmd package
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 4779ecacff531457166c2193d4284c6cfd0a5dd1
+    note: 'all: add global config.Config'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 6a8c2879d412390afde0a70ac8e16391a800473e
+    note: remove vendor
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: 291b9f4ba091eb098fba801e76707d29b78879ee
+    note: using filepath.Join when make filename path
+    author:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+    committer:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+  - commit: c19500eb7dec081982d2192519ef43ee216695f0
+    note: change comment ... exported
+    author:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+    committer:
+      name: Bo Tran
+      email: yeuconay.caconaynua.96.nd@gmail.com
+  - commit: 268f025e083aefdec2ec7116893ad3b569d4f47b
+    note: add validate by jwt token for agents
+    author:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+    committer:
+      name: Bo Tran Van
+      email: botv@vccloud.vn
+  - commit: 6cfd14b9f2f6b96e9adefe1d8d801b5f77c80ca8
+    note: 'client: log error if new token failed'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+  - commit: eb6830f0490c019c40f384748a99727dfe0bba62
+    note: 'client: use specific timeout for client'
+    author:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
+    committer:
+      name: Cuong Manh Le
+      email: cuong.manhle.vn@gmail.com
