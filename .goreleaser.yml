@@ -43,12 +43,6 @@ source:
   enabled: true
   name_template: '{{ .ProjectName }}'
   format: 'tar'
-release:
-  github:
-    owner: bizflycloud
-    name: bizfly-agent
-  prerelease: auto
-  name_template: "{{ .ProjectName}}-v{{ .Version}} {{ .Env.USER}}"
 nfpms:
   name: "{{ .ProjectName}}"
   arch: "{{ .Arch }}"
@@ -78,4 +72,10 @@ nfpms:
     preinstall: ./scripts/linux/preinst
     postinstall: ./scripts/linux/postinst
     postremove: ./scripts/linux/postrm
+release:
+  github:
+    owner: bizflycloud
+    name: "{{ .ProjectName}}"
+  prerelease: auto
+  name_template: "{{ .ProjectName}}-v{{ .Version}} {{ .Env.USER}}"
 
