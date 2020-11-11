@@ -1,8 +1,12 @@
 env:
   - GO111MODULE=on
+  - NFPM_PASSPHRASE= ${{ secrets.PGP_PASSPHRASE }}
+  - PGP_PRIVATE_KEY= ${{ secrets.PGP_PRIVATE_KEY }}
+  - NFPM_KEY_FILE = "./BizFlyCloud"
 before:
   hooks:
     - go mod download
+    - echo ${{ env.PGP_PRIVATE_KEY }} > ${{ env.NFPM_KEY_FILE }}
 builds:
 - env:
     - CGO_ENABLED=0
@@ -72,6 +76,12 @@ nfpms:
       preinstall: ./scripts/linux/preinst
       postinstall: ./scripts/linux/postinst
       postremove: ./scripts/linux/postrm
+    apk:
+      signature:
+        key_file: ${{ env.NFPM_KEY_FILE }}
+    deb:
+    rpm:
+    
 release:
   github:
     owner: BoTranVan 
