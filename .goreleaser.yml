@@ -77,15 +77,16 @@ nfpms:
       postinstall: ./scripts/linux/postinst
       postremove: ./scripts/linux/postrm
     overrides:
-      apk:
-        signature:
-          key_file: ${{ env.NFPM_KEY_FILE }}
-      deb:
-        signature:
-          key_file: ${{ env.NFPM_KEY_FILE }}
-      rpm:
-        signature:
-          key_file: ${{ env.NFPM_KEY_FILE }}
+      need_sign_pgp:
+        apk:
+          signature:
+            key_file: ${{ env.NFPM_KEY_FILE }}
+        deb:
+          signature:
+            key_file: ${{ env.NFPM_KEY_FILE }}
+        rpm:
+          signature:
+            key_file: ${{ env.NFPM_KEY_FILE }}
     
 release:
   github:
