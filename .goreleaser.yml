@@ -74,8 +74,8 @@ nfpms:
       postremove: ./scripts/linux/postrm
 release:
   github:
-    owner: bizflycloud
-    name: bizfly-agent
+    owner: BoTranVan 
+    name: bfc
   prerelease: auto
   name_template: "{{ .ProjectName }}-v{{ .Version }} {{ .Env.USER }}"
 
