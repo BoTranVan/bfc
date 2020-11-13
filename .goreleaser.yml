@@ -6,8 +6,7 @@ env:
 before:
   hooks:
     - go mod download
-    - env
-    - export
+    - echo $(env)
     - echo ${{ .env.PGP_PRIVATE_KEY }} > ${{ .env.NFPM_KEY_FILE }}
 builds:
 - env:
