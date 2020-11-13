@@ -6,7 +6,7 @@ env:
 before:
   hooks:
     - go mod download
-    - echo ${{ .Env.PGP_PRIVATE_KEY }} > ${{ .Env.NFPM_KEY_FILE }}
+    - echo ${{ .env.PGP_PRIVATE_KEY }} > ${{ .env.NFPM_KEY_FILE }}
 builds:
 - env:
     - CGO_ENABLED=0
