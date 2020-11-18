@@ -25,6 +25,6 @@
     "description": "Use BizFly from the Agent",
     "project-url": "https://github.com/botranvan/bfc",
     "tags": "bizflycloud bizfly-agent agent",
-    "license-url": "https://github.com/BoTranVan/bfc/blob/master/COPYING"
+    "license-url": "https://raw.githubusercontent.com/BoTranVan/bfc/master/COPYING"
   }
 }
