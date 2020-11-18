@@ -6,7 +6,7 @@
   "files": {
     "guid": "6e6dcb19-3cf6-46d1-ac56-c6fb39485c9d",
     "items": [
-      "bin/bizfly-agent.exe"
+      "./bizfly-agent.exe"
     ]
   },
   "env": {
