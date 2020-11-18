@@ -17,8 +17,14 @@ test-coverage: ## Run tests with coverage
 build: ## Build the binary file
 	@go build -i -o usr/bin/bizfly-agent *.go
 
+crossbuild_windows: ## Build the binary file for windows
+	@GOARCH=amd64 go build -o output/amd64/bizfly-agent.exe
+	@GOARCH=386   go build -o output/386/bizfly-agent.exe
+
 clean: ## Remove previous build
 	@rm -rf usr/bin/bizfly-agent
+	@rm -rf output/amd64/bizfly-agent.exe
+	@rm -rf output/386/bizfly-agent.exe
 
 
 help: ## Display this help screen
