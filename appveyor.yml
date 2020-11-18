@@ -72,7 +72,7 @@ deploy:
     description: bizfly_agent version $(appveyor_build_version)
     artifact: Artifacts
     auth_token:
-      secure: 09c8c24e3d7a3f48569dca70dc50329d572289b7'
+      secure: pjfFL1kOUvEa/lKXnjMpix+0lHqeZH8TCMzzrC7myWFPkO8zNRV9wjotiZrim6+5
     draft: false
     prerelease: false
     on:
