@@ -22,13 +22,6 @@
     }]
   },
   "shortcuts": {},
-  "hooks": [{
-    "when": "install",
-    "command": "sc.exe create BizFlyAgent binPath=\"[INSTALLDIR]bizfly-agent.exe --collector.processes\" type=share start=auto DisplayName=\"BizFly Agent\""
-  }, {
-    "when": "install",
-    "command": "sc.exe start BizFlyAgent"
-  }],
   "choco": {
     "description": "Use BizFly Agent to do monitor your systems",
     "project-url": "https://github.com/botranvan/bfc",
