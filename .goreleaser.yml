@@ -43,6 +43,12 @@ archives:
     format_overrides:
     - goos: windows
       format: zip
+    files:
+      - COPYING
+      - README.md
+      - changelog.yml
+      - etc/*
+      - scripts/*
 source:
   enabled: true
   name_template: '{{ .ProjectName }}'
