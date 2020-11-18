@@ -10,6 +10,9 @@
       "./etc/bizfly-agent/bizfly-agent.yaml"
     ]
   },
+  "directories": [
+    "assets"
+  ],
   "env": {
     "guid": "94faac3d-4478-431c-8497-fba55dcfb249",
     "vars": [{
@@ -28,9 +31,6 @@
   }, {
     "when": "install",
     "command": "sc.exe start BizFlyAgent"
-  }, {
-    "when": "uninstall",
-    "command": "sc.exe delete BizFlyAgent"
   }],
   "choco": {
     "description": "Use BizFly Agent to do monitor your systems",
