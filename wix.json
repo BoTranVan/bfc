@@ -1,7 +1,7 @@
 {
   "product": "BizFly Cloud CLI",
   "company": "BizFly Cloud, Inc.",
-  "license": "GPL-3.0",
+  "license": "COPYING",
   "upgrade-code": "7c0a5736-5b8e-4176-b350-613fa2d8a1b3",
   "files": {
     "guid": "6e6dcb19-3cf6-46d1-ac56-c6fb39485c9d",
