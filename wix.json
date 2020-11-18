@@ -7,7 +7,7 @@
     "guid": "6e6dcb19-3cf6-46d1-ac56-c6fb39485c9d",
     "items": [
       "./bizfly-agent.exe",
-      "./etc/bizfly-agent/bizfly-agent.yaml",
+      "./etc/bizfly-agent/bizfly-agent.yaml"
     ]
   },
   "env": {
