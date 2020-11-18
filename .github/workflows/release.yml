@@ -27,7 +27,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Download gh.exe
+      - name: Download bizfly-agent.exe
         id: download_exe
         shell: bash
         run: |
