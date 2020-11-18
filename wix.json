@@ -22,8 +22,18 @@
     }]
   },
   "shortcuts": {},
+  "hooks": [{
+    "when": "install",
+    "command": "sc.exe create BizFlyAgent binPath=\"[INSTALLDIR]bizfly-agent.exe --collector.processes\" type=share start=auto DisplayName=\"BizFly Agent\""
+  }, {
+    "when": "install",
+    "command": "sc.exe start BizFlyAgent"
+  }, {
+    "when": "uninstall",
+    "command": "sc.exe delete BizFlyAgent"
+  }],
   "choco": {
-    "description": "Use BizFly from the Agent",
+    "description": "Use BizFly Agent to do monitor your systems",
     "project-url": "https://github.com/botranvan/bfc",
     "tags": "bizflycloud bizfly-agent agent",
     "license-url": "https://raw.githubusercontent.com/BoTranVan/bfc/master/COPYING"
