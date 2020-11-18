@@ -62,7 +62,6 @@ after_build:
         .\installer\build.ps1 -PathToExecutable .\output\$Arch\bizfly-agent-$BuildVersion-$Arch.exe -Version $MSIVersion -Arch "$Arch"
         Move-Item installer\Output\bizfly-agent-$MSIVersion-$Arch.msi output\$Arch\
       }
-  - promu checksum output\
 
 artifacts:
   - name: Artifacts
