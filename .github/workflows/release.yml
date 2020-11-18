@@ -23,7 +23,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   msi:
-    needs: goreleaser
     runs-on: windows-latest
     steps:
       - name: Checkout
