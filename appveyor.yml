@@ -44,7 +44,7 @@ build_script:
       make crossbuild_windows
       # GH requires all files to have different names, so add version/arch to differentiate
       foreach($Arch in "amd64","386") {
-        Rename-Item output\$Arch\bizfly_agent.exe -NewName bizfly_agent-$Version-$Arch.exe
+        Rename-Item output\$Arch\bizfly-agent.exe -NewName bizfly-agent-$Version-$Arch.exe
       }
 
 after_build:
@@ -59,8 +59,8 @@ after_build:
       $MSIVersion = $env:APPVEYOR_REPO_TAG_NAME -replace '^v?([0-9\.]+).*$','$1'
       foreach($Arch in "amd64","386") {
         Write-Verbose "Building bizfly_agent $MSIVersion msi for $Arch"
-        .\installer\build.ps1 -PathToExecutable .\output\$Arch\bizfly_agent-$BuildVersion-$Arch.exe -Version $MSIVersion -Arch "$Arch"
-        Move-Item installer\Output\bizfly_agent-$MSIVersion-$Arch.msi output\$Arch\
+        .\installer\build.ps1 -PathToExecutable .\output\$Arch\bizfly-agent-$BuildVersion-$Arch.exe -Version $MSIVersion -Arch "$Arch"
+        Move-Item installer\Output\bizfly-agent-$MSIVersion-$Arch.msi output\$Arch\
       }
   - promu checksum output\
 

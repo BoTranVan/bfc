@@ -48,14 +48,14 @@ Get-FileIfNotExists "https://github.com/wixtoolset/wix3/releases/download/wix311
 mkdir -Force WiX | Out-Null
 Expand-Archive -Path "${sourceDir}\wix-binaries.zip" -DestinationPath WiX -Force
 
-Copy-Item -Force $PathToExecutable Work/bizfly_agent.exe
+Copy-Item -Force $PathToExecutable Work/bizfly-agent.exe
 Copy-Item -Force $PathToExecutable/etc/bizfly-agent/bizfly-agent.yaml Work/bizfly-agent.yaml
 
-Write-Verbose "Creating bizfly_agent-${Version}-${Arch}.msi"
+Write-Verbose "Creating bizfly-agent-${Version}-${Arch}.msi"
 $wixArch = @{"amd64" = "x64"; "386" = "x86"}[$Arch]
 $wixOpts = "-ext WixFirewallExtension -ext WixUtilExtension"
 Invoke-Expression "WiX\candle.exe -nologo -arch $wixArch $wixOpts -out Work\bizfly_agent.wixobj -dVersion=`"$Version`" bizfly_agent.wxs"
-Invoke-Expression "WiX\light.exe -nologo -spdb $wixOpts -out `"Output\bizfly_agent-${Version}-${Arch}.msi`" Work\bizfly_agent.wixobj"
+Invoke-Expression "WiX\light.exe -nologo -spdb $wixOpts -out `"Output\bizfly-agent-${Version}-${Arch}.msi`" Work\bizfly_agent.wixobj"
 
 Write-Verbose "Done!"
 Pop-Location
