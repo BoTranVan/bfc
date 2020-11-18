@@ -23,7 +23,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
   msi:
-    needs: goreleaser
+    needs: git
+    name: Make release MSI for Windows
     runs-on: windows-latest
     steps:
       - name: Checkout
