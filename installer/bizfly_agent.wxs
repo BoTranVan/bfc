@@ -16,7 +16,7 @@
     <Media Id="1" Cabinet="BizFlyAgent.cab" EmbedCab="yes"/>
     <MajorUpgrade Schedule="afterInstallInitialize" DowngradeErrorMessage="A later version of [ProductName] is already installed. Setup will now exit." />
 
-     
+
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="$(var.PlatformProgramFiles)">
         <Directory Id="APPLICATIONROOTDIRECTORY" Name="BizFly Agent">
@@ -28,7 +28,7 @@
     <ComponentGroup Id="Files">
       <Component Directory="APPLICATIONROOTDIRECTORY">
         <File Id="bizfly_agent.exe" Name="bizfly-agent.exe" Source="Work/bizfly-agent.exe" KeyPath="yes"> </File>
-        <ServiceInstall Id="InstallExporterService" Name="BizFly Agent" DisplayName="BizFly Agent" Description="Push metrics about the system to BizFly Cloud" ErrorControl="normal" Start="auto" Arguments="--collector.processes">
+        <ServiceInstall Id="InstallExporterService" Name="BizFly Agent" DisplayName="BizFly Agent" Type="share" Description="Push metrics about the system to BizFly Cloud" ErrorControl="normal" Start="auto" Arguments="--collector.processes">
           <util:ServiceConfig FirstFailureActionType="restart" SecondFailureActionType="restart" ThirdFailureActionType="restart" RestartServiceDelayInSeconds="60" />
           <ServiceDependency Id="wmiApSrv" />
         </ServiceInstall>
