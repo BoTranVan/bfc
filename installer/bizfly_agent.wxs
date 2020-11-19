@@ -8,7 +8,7 @@
     <?define PlatformProgramFiles = "ProgramFilesFolder" ?>
   <?endif ?>
 
-  <Product Id="*" UpgradeCode="66a6eb5b-1fc2-4b14-a362-5ceec6413308"
+  <Product Id="*" UpgradeCode="9352bb24-2a0f-11eb-9d7a-e7fb3c010f7c"
            Name="BizFly Agent" Version="$(var.Version)" Manufacturer="BizFly Cloud"
            Language="1033" Codepage="1252">
     <Package Id="*" Manufacturer="BizFly Cloud" InstallScope="perMachine"
@@ -28,11 +28,11 @@
     <ComponentGroup Id="Files">
       <Component Directory="APPLICATIONROOTDIRECTORY">
         <File Id="bizfly_agent.exe" Name="bizfly-agent.exe" Source="Work/bizfly-agent.exe" KeyPath="yes"> </File>
-        <ServiceInstall Id="InstallExporterService" Name="BizFly Agent" DisplayName="BizFly Agent" Type="shareProcess" Description="Push metrics about the system to BizFly Cloud" ErrorControl="ignore" Start="auto" Arguments="--collector.processes">
+        <ServiceInstall Id="InstallExporterService" Name="BizFly Agent" DisplayName="BizFly Agent" Type="ownProcess" Description="Push metrics about the system to BizFly Cloud" ErrorControl="ignore" Start="auto" Arguments="--collector.processes">
           <util:ServiceConfig FirstFailureActionType="restart" SecondFailureActionType="restart" ThirdFailureActionType="restart" RestartServiceDelayInSeconds="60" />
           <ServiceDependency Id="wmiApSrv" />
         </ServiceInstall>
-        <ServiceControl Id="ServiceStateControl" Name="BizFly Agent" Remove="uninstall" Start="install" Stop="both" />
+        <ServiceControl Id="ServiceStateControl" Name="windows_exporter" Remove="uninstall" Start="install" Stop="both" />
         <util:EventSource Log="Application" Name="BizFly Agent" EventMessageFile="%SystemRoot%\System32\EventCreate.exe" />
       </Component>
       <Component Directory="APPLICATIONROOTDIRECTORY">
