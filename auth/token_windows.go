@@ -15,7 +15,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>
 
-// +build openbsd linux darwin
+// +build windows
 
 package auth
 
@@ -59,7 +59,7 @@ func (t *Token) SaveToken(token string) error {
 	}
 	err = file.Chmod(0600)
 	if err != nil {
-		prol.Errorln("Can't change mod of file auth_token")
+		prol.Warnln("Can't change mod of file auth_token")
 	}
 
 	prol.Debugln("Saving auth token to: ", t.authTokenFile)
