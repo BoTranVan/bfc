@@ -20,7 +20,6 @@ install:
       Move-Item golangci-lint-1.21.0-windows-amd64\golangci-lint-1.21.0-windows-amd64\golangci-lint.exe $env:GOPATH\bin\golangci-lint.exe
   - ps: |
       $env:GO111MODULE="off"
-      go get -u github.com/prometheus/promu
       go get -u github.com/josephspurrier/goversioninfo/cmd/goversioninfo
       $env:GO111MODULE="on"
 
