@@ -35,7 +35,10 @@ func main() {
 	prol.AddFlags(kingpin.CommandLine)
 	kingpin.HelpFlag.Short('h')
 	kingpin.Parse()
+	start()
+}
 
+func start() {
 	var httpClient = client.NewHTTPClient()
 	if _, err := httpClient.AuthToken(); err != nil {
 		prol.Errorf("failed to get client auth token: %s", err)
