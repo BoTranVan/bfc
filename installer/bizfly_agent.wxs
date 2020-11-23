@@ -32,7 +32,7 @@
           <util:ServiceConfig FirstFailureActionType="restart" SecondFailureActionType="restart" ThirdFailureActionType="restart" RestartServiceDelayInSeconds="60" />
           <ServiceDependency Id="wmiApSrv" />
         </ServiceInstall>
-        <ServiceControl Id="ServiceStateControl" Name="BizFly Agent" Start="install" Remove="uninstall" Stop="both" />
+        <ServiceControl Id="ServiceStateControl" Name="BizFlyAgent" Start="install" Remove="uninstall" Stop="both" />
         <util:EventSource Log="Application" Name="BizFly Agent" EventMessageFile="%SystemRoot%\System32\EventCreate.exe" />
       </Component>
       <Component Directory="APPLICATIONROOTDIRECTORY">
