@@ -14,6 +14,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>
+// +build openbsd linux darwin
 
 package main
 
@@ -35,10 +36,10 @@ func main() {
 	prol.AddFlags(kingpin.CommandLine)
 	kingpin.HelpFlag.Short('h')
 	kingpin.Parse()
-	start()
+	execute()
 }
 
-func start() {
+func execute() {
 	var httpClient = client.NewHTTPClient()
 	if _, err := httpClient.AuthToken(); err != nil {
 		prol.Errorf("failed to get client auth token: %s", err)
