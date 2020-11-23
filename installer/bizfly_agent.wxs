@@ -28,7 +28,7 @@
     <ComponentGroup Id="Files">
       <Component Directory="APPLICATIONROOTDIRECTORY">
         <File Id="bizfly_agent.exe" Name="bizfly-agent.exe" Source="Work/bizfly-agent.exe" KeyPath="yes"> </File>
-        <ServiceInstall Id="InstallExporterService" Name="BizFlyAgent" DisplayName="BizFlyAgent" Type="ownProcess" Description="Push metrics about the system to BizFly Cloud" ErrorControl="ignore" Start="auto" Arguments="--collector.processes --collector.cpu.info">
+        <ServiceInstall Id="InstallExporterService" Name="BizFlyAgent" DisplayName="BizFlyAgent" Type="ownProcess" Description="Push metrics about the system to BizFly Cloud" ErrorControl="normal" Start="auto" Arguments="--collector.processes --collector.cpu.info">
           <util:ServiceConfig FirstFailureActionType="restart" SecondFailureActionType="restart" ThirdFailureActionType="restart" RestartServiceDelayInSeconds="60" />
           <ServiceDependency Id="wmiApSrv" />
         </ServiceInstall>
