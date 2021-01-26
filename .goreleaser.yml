@@ -77,7 +77,7 @@ nfpms:
         dst: /usr/bin/bizfly-agent
       - src: ./scripts/linux/bizfly-agent.service
         dst: "/lib/systemd/system/bizfly-agent.service"
-      - src: /etc/bizfly-agent/bizfly-agent.yaml
+      - src: ./etc/bizfly-agent/bizfly-agent.yaml
         dst: "/etc/bizfly-agent/bizfly-agent.yaml"
         type: config
     scripts:
