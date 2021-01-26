@@ -1,5 +1,5 @@
-PROJECT_NAME := "bizfly-agent"
-PKG := "github.com/bizflycloud/$(PROJECT_NAME)"
+PROJECT_NAME := "bfc"
+PKG := "github.com/botranvan/$(PROJECT_NAME)"
 PKG_LIST := $(shell go list ${PKG}/... | grep -v /vendor/)
 
 
