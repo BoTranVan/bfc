@@ -1,4 +1,4 @@
-module github.com/bizflycloud/bizfly-agent
+module github.com/botranvan/bfc
 
 go 1.14
 

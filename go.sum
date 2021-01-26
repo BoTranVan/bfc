@@ -46,8 +46,8 @@ github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+Ce
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
 github.com/bgentry/speakeasy v0.1.0/go.mod h1:+zsyZBPWlz7T6j88CTgSN5bM796AkVf0kBD4zp0CCIs=
-github.com/bizflycloud/bizfly-agent v1.0.5 h1:MG3IO5KnIrOxfsAKrMkXl6+VCCIIYa1kzhRjX0SyfV0=
-github.com/bizflycloud/bizfly-agent v1.0.5/go.mod h1:d+vgtGeKsnq9eEXXcY4IKleNSo8d2iwmOq9hOKY8mPQ=
+github.com/botranvan/bfc v1.0.5 h1:MG3IO5KnIrOxfsAKrMkXl6+VCCIIYa1kzhRjX0SyfV0=
+github.com/botranvan/bfc v1.0.5/go.mod h1:d+vgtGeKsnq9eEXXcY4IKleNSo8d2iwmOq9hOKY8mPQ=
 github.com/bizflycloud/node_exporter v1.0.0 h1:B0VgEEwnbpZZqCBJEylVgL30OhdJw4DkESXP3jcEU5U=
 github.com/bizflycloud/node_exporter v1.0.0/go.mod h1:NNSSAhWYgSCW41Qg/5apo16YOZ0BfRP4XfYPu0yFUTk=
 github.com/bizflycloud/node_exporter v1.0.1 h1:auV6zNRZYtMpl9ZP+KbbD8GTUDH8GCnWVBUV2yCtGa8=

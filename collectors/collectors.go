@@ -29,7 +29,7 @@ import (
 	prol "github.com/prometheus/common/log"
 	"github.com/prometheus/node_exporter/collector"
 
-	"github.com/bizflycloud/bizfly-agent/client"
+	"github.com/botranvan/bfc/client"
 )
 
 // NewNodeCollector ...

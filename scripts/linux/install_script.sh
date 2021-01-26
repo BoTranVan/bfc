@@ -133,7 +133,7 @@ else
     ARCHI="x86_64"
 fi
 
-FILE_URL=$(echo "https://github.com/bizflycloud/bizfly-agent/releases/download/$agent_version/bizfly-agent_Linux_$ARCHI.tar.gz")
+FILE_URL=$(echo "https://github.com/botranvan/bfc/releases/download/$agent_version/bizfly-agent_Linux_$ARCHI.tar.gz")
 DOWNLOAD_TOOL=`$sudo_cmd which wget`
 EXTRACT_TOOL=`$sudo_cmd which tar`
 

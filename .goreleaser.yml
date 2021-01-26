@@ -62,7 +62,7 @@ nfpms:
        metrics to report the whole volume instead of mount points.
        Only Linux is supported.
     vendor: "BizFly Cloud"
-    homepage: "https://github.com/bizflycloud/bizfly-agent"
+    homepage: "https://github.com/botranvan/bfc"
     license: "GPL-3.0"
     formats:
       - apk

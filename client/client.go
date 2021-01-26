@@ -31,8 +31,8 @@ import (
 	prol "github.com/prometheus/common/log"
 	"github.com/spf13/viper"
 
-	"github.com/bizflycloud/bizfly-agent/auth"
-	"github.com/bizflycloud/bizfly-agent/config"
+	"github.com/botranvan/bfc/auth"
+	"github.com/botranvan/bfc/config"
 )
 
 // Client ...

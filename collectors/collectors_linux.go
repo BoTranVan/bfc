@@ -23,6 +23,7 @@ var DefaultCollectors = []string{
 	"cpu",
 	"diskstats",
 	"filesystem",
+	"gpu",
 	"loadavg",
 	"meminfo",
 	"netdev",

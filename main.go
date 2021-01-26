@@ -27,9 +27,9 @@ import (
 	prol "github.com/prometheus/common/log"
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/bizflycloud/bizfly-agent/client"
-	"github.com/bizflycloud/bizfly-agent/collectors"
-	"github.com/bizflycloud/bizfly-agent/config"
+	"github.com/botranvan/bfc/client"
+	"github.com/botranvan/bfc/collectors"
+	"github.com/botranvan/bfc/config"
 )
 
 var logger service.Logger

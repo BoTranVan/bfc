@@ -22,6 +22,7 @@ package collectors
 var DefaultCollectors = []string{
 	"cpu",
 	"diskstats",
+	"gpu",
 	"meminfo",
 	"netdev",
 	"netstat",
